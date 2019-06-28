@@ -1,0 +1,122 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  {% for sheet in css %}
+    <link rel="stylesheet" href="{{ url_for("static", filename=sheet+".css") }}">
+  {% endfor %}
+  <title>CV -- Stefan Eng</title>
+</head>
+<body>
+  <div id="tableContainer">
+    <div id="tableRow">
+      <div id="sidebar">
+        <div id="mugshot">
+          <img src={{ url_for("static", filename="mugshot.jpg") }}>
+        </div>
+        <div id="skills">
+          {% for key, values in data.sidebar.skills.items() %}
+            <h3>{{ key.replace("_", ' ') | title }}</h3>
+            <div class="container-skills-table">
+              {% for key, value in values.items() %}
+                <div class="table-row">
+                  <label class="table-cell">{{ key.replace("_", ' ') | title }}</label>
+                  <div class="points table-cell">
+                    {% for _ in range(value) %}
+                      <span>⬤</span>
+                    {% endfor %}
+                    {% for _ in range(5-value) %}
+                      <span>◯</span>
+
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+        <hr>
+        <div >
+          <h3>Links:</h3>
+          <span>Github: <a href="http://www.github.com/wribbe">github.com/wribbe</a></span>
+        </div>
+        <hr>
+        <div >
+          <h3>References:</h3>
+          <span>Provided on request.</span>
+        </div>
+      </div>
+      <div id="main">
+        <div id="info">
+          <div id="name"> {{ data.personal_information.name }}</div>
+          <div id="contact">
+            {{ data.personal_information.email }} |
+            {{ data.personal_information.phone }}
+          </div>
+        </div>
+        <div id="work">
+          {% set key = "work_experience" %}
+          {% set time_entries = data.main[key] %}
+          <h2>{{ key.replace("_", ' ') | title }}</h2>
+          <hr>
+          {% for company, start, end, title_job, type, description in time_entries %}
+            <table>
+              <tr>
+                <td class="td-company">{{ company.replace("_", ' ') | title }}</td>
+                <td class="td-title">{{ title_job }} </td>
+                <td class="td-type">
+                  {% if type == "part time" %}
+                    ◔
+                  {% else %}
+                    ●
+                  {% endif %}
+                </td>
+                <td class="td-start">{{ start.strftime("%Y %b") }}</td>
+                <td> - </td>
+                <td class="td-end">
+                  {% if end is string %}
+                    {{ end | title }}
+                  {% else  %}
+                    {{ end.strftime("%Y %b") }}
+                  {% endif %}
+                </td>
+              </tr>
+            </table>
+            <p> {{ description }} </p>
+          {% endfor %}
+        </div>
+        <div>
+          {% set key = "education" %}
+          {% set time_entries = data.main[key] %}
+          <h2>{{ key.replace("_", ' ') | title }}</h2>
+          <hr>
+          {% for company, start, end, years, description in time_entries %}
+            <table class="table-education">
+              <tr>
+                <td class="td-company">{{ company.replace("_", ' ') | title }}</td>
+                <td class="td-years">Years: {{ years }}</td>
+                <td class="td-start">{{ start.strftime("%Y") }}</td>
+                <td class="td-separator"> -</td>
+                <td class="td-end">
+                  {% if end is string %}
+                    {{ end | title }}
+                  {% else  %}
+                    {{ end.strftime("%Y") }}
+                  {% endif %}
+                </td>
+              </tr>
+            </table>
+            <p> {{ description }} <p>
+          {% endfor %}
+        </div>
+        <div id="general">
+          <h2> General </h2>
+          <hr>
+          <p> {{ data.main.general }} </p>
+          <h2> Doing </h2>
+          <hr>
+          <p> {{ data.main.doing }} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
