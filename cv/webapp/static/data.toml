@@ -134,7 +134,7 @@
       trying to figure out how one gets good at drawing.
     """
 
-  doing = """
+  current_projects = """
     I'm currently trying to climb up the programming-stack. I'm working through
     HTML5 (which this CV is made with), javascript and programming mobile
     applications for Android.
