@@ -103,6 +103,15 @@
     figure generation.
   """
 
+[[main.work_experience.swedish_military]]
+  start = 2010-01-01
+  end = 2012-01-01
+  type = "full time"
+  title = "Professional Soldier"
+  description = """
+  """
+
+
 [[main.education.computer_science]]
   start = 2014-01-01
   end = "ongoing"
@@ -117,12 +126,21 @@
   """
 
 [[main.education.nano_science]]
-  start = 2009-01-01
-  end = 2014-02-01
-  years = "3½"
+  start = 2012-09-01
+  end = 2013-09-01
+  years = "1"
   description = """
-    Got pulled in by the broad scope and interesting scientific applications,
-    but ultimately not for me.
+    Tried to return to Nano science, but was ultemately not for me.
+  """
+
+[[main.education.nano_science]]
+  start = 2008-01-01
+  end = 2010-01-01
+  years = "2"
+  description = """
+    Got pulled in by the broad scope and interesting scientific applications.
+    Took a break when I was asked to join the military due to good merits from
+    basic trainig.
   """
 
 [main]
