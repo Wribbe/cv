@@ -88,7 +88,7 @@
   title = "Consultant Programmer"
   description = """
     Implemented self-checking excel spreadsheet using VBA. This was done in
-    order to make sure that certain values were assigned when doing fire-saftey
+    order to make sure that certain values were assigned when doing fire-safety
     tests.
   """
 
@@ -109,7 +109,7 @@
   type = "full time"
   title = "Professional Soldier"
   description = """
-    Was asked to join the military due to good merits from basic trainig, which
+    Was asked to join the military due to good merits from basic training, which
     I did.
   """
 
