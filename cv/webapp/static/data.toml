@@ -103,6 +103,16 @@
     figure generation.
   """
 
+[[main.work_experience.swedish_military]]
+  start = 2010-03-01
+  end = 2012-06-01
+  type = "full time"
+  title = "Professional Soldier"
+  description = """
+    Was asked to join the military due to good merits from basic trainig, which
+    I did.
+  """
+
 [[main.education.computer_science]]
   start = 2014-01-01
   end = "ongoing"
@@ -117,21 +127,29 @@
   """
 
 [[main.education.nano_science]]
-  start = 2009-01-01
-  end = 2014-02-01
-  years = "3½"
+  start = 2012-09-01
+  end = 2014-01-01
+  years = "1"
   description = """
-    Got pulled in by the broad scope and interesting scientific applications,
-    but ultimately not for me.
+    Tried to return to Nano science, but was ultimately not for me.
+  """
+
+[[main.education.nano_science]]
+  start = 2008-09-01
+  end = 2010-01-01
+  years = "2"
+  description = """
+    Got pulled in by the broad scope and interesting scientific applications.
   """
 
 [main]
   general = """
       Hi, a little bit about me. I'm a programmer at heart, and I love working
-      with code, especially when it involves making tools that makes other peoples
-      work easier. Outside of programming I've spent ~4 years serving in the Swedish
-      military, I enjoy playing instruments in my spare time and I'm also
-      trying to figure out how one gets good at drawing.
+      with code, especially when it involves making tools that makes other
+      peoples work easier. Outside of programming I've spent ~4 years, including
+      basic training, serving in the Swedish military. Given spare time i try to
+      play instruments, spend time trying to figure out how one gets good at
+      drawing.
     """
 
   current_projects = """
