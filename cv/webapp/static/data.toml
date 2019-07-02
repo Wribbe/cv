@@ -1,0 +1,141 @@
+#TOML document with CV-data.
+
+[personal_information]
+  phone = "+46 709 42 18 75"
+  email = "kontakt@stefaneng.se"
+  name = "Stefan Eng"
+  title = "Programmer"
+
+
+# Rating 1 -> 5.
+#---------------
+[sidebar.skills.programming_languages]
+  Python = 4
+  C = 3
+  Java = 2
+  "C++" = 2
+  Haskell = 1
+  Javascript = 1
+
+[sidebar.skills.environments]
+  Linux = 4
+  Windows = 3
+  Unix = 2
+
+[sidebar.skills.tooling]
+  Vim = 4
+  Git = 4
+  gdb = 3
+  Valgrind = 3
+  Pycharm = 2
+  Eclipse = 1
+
+[sidebar.skills.languages]
+  Swedish = 5
+  English = 4
+  Polish = 3
+  German = 1
+
+[[main.work_experience.massive_entertainment]]
+  start = 2019-02-15
+  end = "ongoing"
+  type = "full time"
+  title = "Junior Tools Programmer"
+  description = """
+    Building and maintaining tools for the cinematics department at Massive
+    Entertainment, Malmö. Though most of the work is in Python, I interface
+    with C++, powershell and posix-shell on a regular basis.
+  """
+
+[[main.work_experience.massive_entertainment]]
+  start = 2018-09-23
+  end = 2019-02-15
+  type = "intern"
+  title = "Programmer Intern"
+  description = """
+    Joined the team as an intern in order do my master thesis, help out with
+    tooling adjustments and a chance to learn the ropes.
+  """
+
+[[main.work_experience.axis_communications]]
+  start = 2014-06-01
+  end = 2016-06-01
+  type = "part time"
+  title = "Consultant Programmer"
+  description = """
+    Brought on to continue development of a internal tool written by previous
+    LTH students. First encounter with Python in the wild, involved everything
+    from configuring databases and web servers to cleaning up and massaging
+    data for processing and presentation.
+  """
+
+[[main.work_experience.axis_communications]]
+  start = 2016-06-01
+  end = 2016-12-01
+  type = "part time"
+  title = "Consultant Programmer"
+  description = """
+    Was asked to plan, design and implement a python based web-application
+    to facilitate a better work-flow for managing camera release-notes.
+    The tool reduced the workload significantly and enabled the departement to
+    move ahead with larger release-batches.
+  """
+
+[[main.work_experience.ekovent]]
+  start = 2014-04-01
+  end = 2014-06-01
+  type = "part time"
+  title = "Consultant Programmer"
+  description = """
+    Implemented self-checking excel spreadsheet using VBA. This was done in
+    order to make sure that certain values were assigned when doing fire-saftey
+    tests.
+  """
+
+[[main.work_experience.ekovent]]
+  start = 2014-09-01
+  end = 2014-11-01
+  type = "part time"
+  title = "Consultant Programmer"
+  description = """
+    The initial automation was a success and got the opportunity to refine and
+    expand on the previous automation with additional checks, validation and
+    figure generation.
+  """
+
+[[main.education.computer_science]]
+  start = 2014-01-01
+  end = "ongoing"
+  years = 5
+  description = """
+    Realised I have a knack for programming and switched from nano-science to
+    computer-science. Went head long down the stack, the closer to the metal
+    the better. Fell in love with C, found immense enjoyment in low-level
+    graphics programming and learning about the innards of compilers. Working
+    on wrapping up my thesis about user-design and software in order to put a
+    nice bow on it all.
+  """
+
+[[main.education.nano_science]]
+  start = 2009-01-01
+  end = 2014-02-01
+  years = "3½"
+  description = """
+    Got pulled in by the broad scope and interesting scientific applications,
+    but ultimately not for me.
+  """
+
+[main]
+  general = """
+      Hi, a little bit about me. I'm a programmer at heart, and I love working
+      with code, especially when it involves making tools that makes other peoples
+      work easier. Outside of programming I've spent ~4 years serving in the Swedish
+      military, I enjoy playing instruments in my spare time and I'm also
+      trying to figure out how one gets good at drawing.
+    """
+
+  doing = """
+    I'm currently trying to climb up the programming-stack. I'm working through
+    HTML5 (which this CV is made with), javascript and programming mobile
+    applications for Android.
+  """

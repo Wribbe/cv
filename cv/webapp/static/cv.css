@@ -1,0 +1,161 @@
+@page {
+  size: A4;
+  margin: 1.0cm;
+}
+
+* {
+  font-size: 10pt;
+}
+
+#tableContainer {
+  display: table;
+  font-family: sans-serif;
+  width: 710px;
+  padding-top : 40px;
+  padding-left: 80px;
+}
+
+#tableRow {
+  display: table-row;
+}
+
+#main {
+  display: table-cell;
+  vertical-align: top;
+}
+
+#sidebar {
+  display: table-cell;
+  width: 25%;
+  padding: 15px;
+}
+
+header {
+  background-color: green;
+  height: 50px;
+}
+
+footer {
+  background-color: green;
+  height: 50px;
+}
+
+#mugshot img {
+  height: 180px;
+  border-radius: 50%;
+
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.table-row label {
+  width: 80px;
+}
+
+#skills {
+  font-size: 12pt;
+  padding-bottom: 10px;
+}
+
+#main {
+}
+
+#skills h3 {
+  margin-bottom: 8px;
+}
+
+#main h2 {
+  margin-bottom: 0px;
+}
+
+#contact {
+  display: inline-block;
+}
+
+#name {
+  padding-top: 15px;
+  font-size: 25pt;
+}
+
+#phone {
+  font-size: 20pt;
+}
+
+
+td {
+  font-size: 80%;
+  vertical-align: middle;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+td:first-child {
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.td-title {
+  font-style: italic;
+  width: 133px;
+}
+
+.td-type {
+  width: 25px;
+  text-align: center;
+}
+
+p {
+  margin: 8px;
+  font-weight: normal;
+  font-size: 90%;
+  margin-top: 0px;
+  display: block;
+}
+
+.company {
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+
+.title {
+  font-style: italic;
+  width: 100px;
+}
+
+.td-company {
+  width: 165px;
+}
+
+.td-start {
+  width: 53px;
+}
+
+.td-end {
+  width: 53px;
+  padding-left: 4px;
+}
+
+.td-years {
+  width: 160px;
+  text-align: center;
+}
+
+.table-education .td-start {
+  text-align: right;
+}
+
+.table-education .td-separator {
+  text-align: center;
+}
+
+.table-education .td-end {
+  text-align: left;
+}
