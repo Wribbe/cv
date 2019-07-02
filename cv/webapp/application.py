@@ -1,6 +1,6 @@
 import toml
 
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from flask_weasyprint import render_pdf, HTML
 from pathlib import Path
 
@@ -14,10 +14,10 @@ def save_pdf(html, path):
   data_pdf = obj_html.write_pdf()
   with open(path, 'wb') as fh:
     fh.write(data_pdf)
+  return redirect(url_for('cv'))
 
 
-@app.route('/')
-def cv():
+def get_data():
   data_cv = toml.load(Path(PATH_ROOT, "static", "data.toml"))
 
   # Sort the dates in data.main.values in descending order.
@@ -45,8 +45,16 @@ def cv():
             ))
         if sorted_dates:
           data_cv['main'][key] = list(reversed(sorted(sorted_dates, key=lambda x: x[1])))
+  return data_cv
 
-  html = render_template("cv.html", data=data_cv, css=['cv'])
+@app.route('/pdf')
+def cv_pdf():
+  data_cv = get_data()
   html_pdf = render_template("cv.html", data=data_cv, css=['cv', 'cv_pdf'])
-  save_pdf(html_pdf, "cv.pdf")
+  return save_pdf(html_pdf, "cv.pdf")
+
+@app.route('/')
+def cv():
+  data_cv = get_data()
+  html = render_template("cv.html", data=data_cv, css=['cv'])
   return html
