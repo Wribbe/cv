@@ -109,8 +109,6 @@
   type = "full time"
   title = "Professional Soldier"
   description = """
-    Was asked to join the military due to good merits from basic training, which
-    I did.
   """
 
 [[main.education.computer_science]]
