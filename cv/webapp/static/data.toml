@@ -14,8 +14,8 @@
   C = 3
   Java = 2
   "C++" = 2
+  Javascript = 2
   Haskell = 1
-  Javascript = 1
 
 [sidebar.skills.environments]
   Linux = 4
@@ -36,9 +36,19 @@
   Polish = 3
   German = 1
 
+[[main.work_experience.orange_cyber_defense]]
+  start = 2021-02-01
+  end = "ongoing"
+  type = "full time"
+  title = "Tools Programmer"
+  description = """
+    Updating and maintaining a suite of mainly Python based tooling geared to
+    help detect and evaluate cyber-security related incidents.
+  """
+
 [[main.work_experience.massive_entertainment]]
   start = 2019-02-15
-  end = "ongoing"
+  end = 2021-02-01
   type = "full time"
   title = "Junior Tools Programmer"
   description = """
@@ -142,16 +152,11 @@
 
 [main]
   general = """
-      Hi, a little bit about me. I'm a programmer at heart, and I love working
-      with code, especially when it involves making tools that makes other
-      peoples work easier. Outside of programming I've spent ~4 years, including
-      basic training, serving in the Swedish military. Given spare time i try to
-      play instruments and spend some time trying to figure out how one gets
-      good at drawing.
+      About me, I am a programmer at heart. I love hacking away at code,
+      even though time has become a bit more scarce since my lovely daughter
+      was born last year.
     """
 
-  current_projects = """
-    I'm currently trying to climb up the programming-stack. I'm working through
-    HTML5/CSS (which is what I made this CV with), javascript and programming mobile
-    applications for Android.
-  """
+#  current_projects = """
+#
+#  """
