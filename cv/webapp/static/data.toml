@@ -127,11 +127,7 @@
   years = 5
   description = """
     Realised I have a knack for programming and switched from nano-science to
-    computer-science. Went head long down the stack, the closer to the metal
-    the better. Fell in love with C, found immense enjoyment in low-level
-    graphics programming and learning about the innards of compilers. Working
-    on wrapping up my thesis about user-design and software in order to put a
-    nice bow on it all.
+    computer-science.
   """
 
 [[main.education.nano_science]]
@@ -139,7 +135,7 @@
   end = 2014-01-01
   years = "1½"
   description = """
-    Tried to return to Nano science, but was ultimately not for me.
+    Tried to return to nano-science, but was ultimately not for me.
   """
 
 [[main.education.nano_science]]
@@ -153,8 +149,8 @@
 [main]
   general = """
       About me, I am a programmer at heart. I love hacking away at code,
-      even though time has become a bit more scarce since my lovely daughter
-      was born last year.
+      which I try to find time to do, even though time has become a bit more
+      scarce since my lovely daughter was born last year.
     """
 
 #  current_projects = """
